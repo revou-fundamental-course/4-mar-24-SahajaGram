@@ -3,20 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR BMI</title>
     <link rel="stylesheet" href="css/style.css"
-    <title>Kalkulator BMI</title>
 </head>
 <body>
-    <script src="js/script.js"></script>
     <header>
     <h1>KALKULATOR BMI</h1>
-
     </header>
     <main>
+        <div class="main-container">
+            <section class="container-item">
+                <h2>PERHITUNGAN</h2>
+                <p>Apakah kamu mengetahui berat badanmu sekarang ideal? Setiap orang memiliki ukuran dan bentuk tubuh yang berbeda. Meski demikian mempunyai berat badan ideal menjadi salah satu hal yang menjadi impian banyak orang. Yuk, hitung berat badan idealmu!</p>    
+    
+        <!-- CALCULATE FORM -->
+                <section class="container-form">
+                    <h2>Klakulator BMI</h2>
 
+                    <div>
+                        <label>Jenis Kelamin</label><br>
+                        <input type="radio" id="sex-man" name="sex"><label for="sex-man">Laki-laki</label> <br>
+                        <input type="radio" id="sex-woman" name="sex"><label for="sex-woman">Perempuan</label>    
+                    </div>
+                    <div>
+                        <label>Berat Badan (kg)</label><br>
+                        <input id="input-weight" type="number"><br>
+                        <span id="weight-error"></span>
+                    </div>
+                    <div>
+                        <label>Umur (tahun)</label><br>
+                        <input id="input-age"type="number"><br>
+                        <span id="age-error"></span>
+                    </div>
+                    <div>
+                        <label>Tinggi Badan (cm)</label><br>
+                        <input id="input-height" type="number"><br>
+                        <span id="height-error"></span>
+                    </div>
+        <!-- CALCULATE BUTTON -->
+                    <div>
+                      <button id="calculate-button" type="button"> Hitung BMI</button>
+                      <button type="button"> Reset</button>
+                    </div>
+                    
+                </section>
+        <!-- BMI INTRODUCTION -->
+                <section>
+                    <h4>Apa itu Kalkulator BMI?</h4>
+                    <p>Kalkulator BMI adalah alat untuk mengidentifikasi apakah berat badan kamu termasuk dalam kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 20 tahun ke atas. Perlu diingat bahwa Kalkulator BMI ini tidak dapat diaplikasikan untuk ibu hamil dan anak-anak karena standar BMI yang berbeda.</p>
+                </section>
+            </section>
+        <!-- CALCULATE RESULT  -->
+            <section class="container-item">
+                <h2>HASIL</h2>
+                <section class="container-result">
+                    <p>BMI Anda Adalah</p>
+                    <h5 id="calculate-result">-</h5>
+                    <p id="information-result"></p>
+                    <button type="button"> Donwload Hasil BMI </button>
+                </section>
+
+            </section>
+            
+        </div>
+        
     </main>
     <footer>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

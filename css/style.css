@@ -1,3 +1,104 @@
-#{
-    display: flexbox;
+*{
+    border: 2px slid;
 }
+
+body{
+    font-family: "Quicksand", sans-serif;
+    border: ;
+    background-color: white;
+    color: ale;
+    ;
+}
+/* Tittle */
+    header>h1{
+        position:absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-color: aquamarine;
+        padding: 20px 0px ;
+        width: 100%;
+    }
+/* Main Container */
+    .main-container {
+        display: flex;
+        margin-top: 65px;
+    }
+/* Container Item */
+    .container-item{
+    
+        width: 100%;
+        padding: 24px;
+        padding-top: px;
+    }
+    .container-item>h2{
+        width: 100%;
+    
+    }
+/* Form Calculate */
+    .container-form{
+    
+        background-color: rgb(183, 177, 177);
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    input[type=number]{
+        border-radius: 8px;
+        border-style: none;
+        width: 100%;
+}
+/* ALERT */
+    span{
+        color: red;
+    }
+/* SET BUTTON */
+    button{
+    border: 0px;
+    font-size: medium;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: aquamarine;
+    border-radius: 8px;
+    }
+    #calculate-button{
+    background-color: black;
+    color: white;
+
+    }
+    .container-form>h2{
+        padding-left: 20px;: ;
+    }
+    .container-form{
+        border-radius: 15px
+    }
+    .container-form>div{
+        padding: 8px;
+    }
+/* Container Result */
+    .container-result{
+        text-align: center;
+        background-color: rgb(183, 177, 177);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 20px
+    }
+    .container-result>h5{
+        font-style: normal;
+        font-size: xx-large ;
+        margin: 0px;
+
+    }
+    img{
+        background-blend-mode: color;
+        height:1px;
+        padding: 1px;
+
+    }
+/* Agar di mobile terlihat bagus */
+    @media only screen and (max-width: 480px){
+        .main-container {
+            flex-direction: column;
+        }
+        
+    }
