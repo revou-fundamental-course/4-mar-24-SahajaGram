@@ -10,28 +10,23 @@ body{
     background-color: white ;
 }
 /* Tittle */
-    header>h1{
-        position: absolute;
-        top: 0;
-        left: 0;
+    header{
+        padding: 10px 0px 10px 0px;
         text-align: center;
         background-color: aquamarine;
-        padding:20px 0px 20px 0px;
-        width: 100%;
         border-radius: 50px;
 
     }
 /* Main Container */
     .main-container {
         display: flex;
-        margin-top: 60px;
+        column-gap:0px;
     }
 /* Container Item */
     .container-item{
         
         width: 100%;
-        padding: 24px;
-        padding-top: px;
+        padding-left: 30px;
     }
     .container-item>h2{
         width: 100%;
@@ -40,7 +35,6 @@ body{
 /* Form Calculate */
     .container-form{
         box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
-        background-color: rb(183, 177, 177);
         padding-top: 8px;
         padding-bottom: 8px;
     }
@@ -70,7 +64,7 @@ body{
 
     }
     .container-form>h2{
-        padding-left: 20px;: ;
+        padding-left: 20px; ;
     }
     .container-form{
         border-radius: 15px
@@ -100,15 +94,22 @@ body{
     }
 /* Footer */
 footer{
-    text-align: center;
-    background-color: aquamarine;
-    padding: 3px;
-    
+      background-color: aquamarine;
+      text-align: center;
+      padding: 10px 0px 10px 0px ;
+      font-weight: 900;
+      font-style: italic;
+
 }
 /* Agar di mobile terlihat bagus */
     @media only screen and (max-width: 480px){
         .main-container {
             flex-direction: column;
+        }
+        .container-item{
+        
+            width: 100%;
+            padding-left: 0px;
         }
 
         
