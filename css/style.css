@@ -1,32 +1,34 @@
 *{
-    border: 2px slid;
+    /* border: 2px solid; */
 }
 
 body{
+    margin: 0;
+    position:absolute;
     font-family: "Quicksand", sans-serif;
-    border: ;
-    background-color: white;
-    color: ale;
-    ;
+    height: 200px;
+    background-color: white ;
 }
 /* Tittle */
     header>h1{
-        position:absolute;
+        position: absolute;
         top: 0;
         left: 0;
         text-align: center;
         background-color: aquamarine;
-        padding: 20px 0px ;
+        padding:20px 0px 20px 0px;
         width: 100%;
+        border-radius: 50px;
+
     }
 /* Main Container */
     .main-container {
         display: flex;
-        margin-top: 65px;
+        margin-top: 60px;
     }
 /* Container Item */
     .container-item{
-    
+        
         width: 100%;
         padding: 24px;
         padding-top: px;
@@ -37,8 +39,8 @@ body{
     }
 /* Form Calculate */
     .container-form{
-    
-        background-color: rgb(183, 177, 177);
+        box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+        background-color: rb(183, 177, 177);
         padding-top: 8px;
         padding-bottom: 8px;
     }
@@ -54,6 +56,7 @@ body{
 /* SET BUTTON */
     button{
     border: 0px;
+    font-weight: bold;
     font-size: medium;
     height: 50px;
     padding-left: 20px;
@@ -77,6 +80,7 @@ body{
     }
 /* Container Result */
     .container-result{
+        box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
         text-align: center;
         background-color: rgb(183, 177, 177);
         padding-top: 8px;
@@ -87,18 +91,25 @@ body{
         font-style: normal;
         font-size: xx-large ;
         margin: 0px;
+    }
+    .container-result>h4{
+        font-style: normal;
+        font-size: large ;
+        margin: 0px;
 
     }
-    img{
-        background-blend-mode: color;
-        height:1px;
-        padding: 1px;
-
-    }
+/* Footer */
+footer{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 3px;
+    
+}
 /* Agar di mobile terlihat bagus */
     @media only screen and (max-width: 480px){
         .main-container {
             flex-direction: column;
         }
+
         
     }
